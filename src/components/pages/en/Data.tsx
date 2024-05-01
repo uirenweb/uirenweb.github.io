@@ -13,7 +13,7 @@ export const Data = () => {
             </div>
           </div>
           <div className="data__column">
-            <div className="data__number text-3xl font-PublicSans">7+</div>
+            <div className="data__number text-3xl font-PublicSans">100+</div>
             <div className="data__text text-xl font-PublicSans">Volunteers</div>
           </div>
         </div>
@@ -24,7 +24,7 @@ export const Data = () => {
             </div>
           </div>
           <div className="data__column">
-            <div className="data__number text-3xl font-PublicSans">7+</div>
+            <div className="data__number text-3xl font-PublicSans">100+</div>
             <div className="data__text text-xl font-PublicSans">Pupils</div>
           </div>
         </div>
@@ -35,7 +35,7 @@ export const Data = () => {
             </div>
           </div>
           <div className="data__column">
-            <div className="data__number text-3xl font-PublicSans">3</div>
+            <div className="data__number text-3xl font-PublicSans">9</div>
             <div className="data__text text-xl font-PublicSans">Subjects of study</div>
           </div>
         </div>
