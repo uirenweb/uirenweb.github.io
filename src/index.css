@@ -1,0 +1,353 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Preahvihear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,600;1,600&display=swap");
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.box-shadow {
+  box-shadow: 8px 13px 10.5px rgba(0, 0, 0, 0.25);
+}
+
+.box-shadow2 {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.application__button {
+  background-color: #AFD198;
+  padding: 15px 20px;
+}
+
+.application__button:last-child {
+  background-color: #8576FF;
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 a {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover a {
+  background: none;
+}
+
+.application__student, .application__volunteer {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+.process .swiper-button-next,
+.process .swiper-button-prev {
+  color: white;
+  background-color: #ffc27a;
+  transform: scale(0.5);
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.process .swiper-button-next {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.process .swiper-button-prev {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.process .swiper-pagination-bullet {
+  background-color: #b5b8b9;
+}
+
+.process .swiper-pagination-bullet-active {
+  background-color: #21212f;
+}
+
+.faq .swiper-button-next,
+.faq .swiper-button-prev {
+  color: #363a3d;
+  background-color: #ffffff;
+  transform: scale(0.4);
+  width: 88px;
+  height: 88px;
+  border-radius: 12px;
+  opacity: 0;
+  cursor: auto;
+}
+
+.faq .swiper-button-next {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  translate: 0 -50%;
+}
+.faq .swiper-button-prev {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.faq .swiper-pagination-bullet {
+  background-color: #b5b8b9;
+}
+
+.faq .swiper-pagination-bullet-active {
+  background-color: #20b486;
+}
+
+@media screen and (min-width: 640px) {
+  .faq .swiper-button-next,
+  .faq .swiper-button-prev {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.special__word {
+  position: relative;
+}
+
+.special__word::after {
+  position: absolute;
+  bottom: -30px;
+  right: -10px;
+  content: "";
+  width: 295px;
+  height: 27px;
+  background-image: url("./img/icons/special/Vector 6.svg");
+}
+
+@media screen and (max-width: 1020px) {
+  .special__word::after {
+    scale: 0.8;
+    translate: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .special__word::after {
+    scale: 0.6;
+    translate: 50px 0;
+  }
+}
+
+.footer__text {
+  position: relative;
+}
+
+.footer__text::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #FC7A1E;
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-button {
+  display: none; 
+}
+
+@media (max-width: 768px) { /* Adjust this value if your 'lg' breakpoint is different */
+  .bm-burger-button {
+    display: block; 
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #fff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #000;
+  padding: 0.8em;
+  font-size: 20px;
+}
+
+/* Individual item */
+.bm-item {
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.dropdown {
+  margin-left: auto;
+  position: relative;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.drop2 {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.no-drop2 img {
+  width: 70%;
+}
+
+.drop2 img {
+  width: 70%;
+}
+
+.no-drop2 {
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* padding: 10px 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.no-drop {
+  display: none;
+}
+
+.drop {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+.dropdown__child {
+  background-color: #fff;
+  padding: 0 20px 0px;
+  translate: 0px 0;
+  /* border: solid 1px #000; */
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1030px) {
+  .drop2, .no-drop2 {
+    width: 80%;
+  }
+}
+
+.button__tutor {
+  border: solid #4b4b4b 1px;
+}
