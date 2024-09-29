@@ -9,7 +9,7 @@ export const Intro = () => {
       <div className="intro__column w-1/2 font-PublicSans py-20 md:py-44 ">
         <div className="text- xs:text-2xl sm:text-3xl font-semibold md:text-4xl mx-auto lg:text-5xl w-4/5">
           <span className="font-bold">UIREN</span> дегеніміз — балаларға тегін
-          репетиторлық көмек көрсететін бейкоммерциялық ұйым.
+          репетиторлық көмек көрсететін бейкоммерциялық еріктілер бастамасы.
         </div>
       </div>
       <div className="intro__column w-1/2 -translate-y-12 md:-translate-y-24">
